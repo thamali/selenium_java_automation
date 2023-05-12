@@ -45,7 +45,7 @@ public class RegistrationPageTest extends TestBase {
     //Verify User registration
     @Test(priority = 2)
     public void UserRegistrationTest(){
-        log.info("****Click on Accept Coockie****");
+        log.info("****Click on Accept Coockie Alert****");
         registrationPage.AcceptCoockie();
         log.info("****Starting User Registration****");
         registrationConfirmationPage = registrationPage.SubmitRegistrationDetail(prop.getProperty("firstname"), prop.getProperty("lastname"), prop.getProperty("clinicname")
