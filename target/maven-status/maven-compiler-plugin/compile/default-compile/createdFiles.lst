@@ -1,4 +1,4 @@
 Util\TestUtil.class
-PageObjects\HomePage.class
+PageObjects\RegistrationConfirmationPage.class
 PageObjects\RegistrationPage.class
 BaseTest\TestBase.class

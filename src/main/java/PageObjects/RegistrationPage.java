@@ -1,16 +1,13 @@
 package PageObjects;
 
 import BaseTest.TestBase;
-import Util.TestUtil;
-import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.concurrent.TimeUnit;
-
 public class RegistrationPage extends TestBase {
+
 
     //Page Factory Object Reporsitory
 
@@ -47,12 +44,13 @@ public class RegistrationPage extends TestBase {
 
    //Accept Coockies
     public void AcceptCoockie(){
+
         Alertcoockie.click();
     }
 
 
      //Input Data to the Text Fields in Registration Form and Submit
-     public HomePage SubmitRegistrationDetail(String fname,String lname,String clinicname,String email,String phone,String jobtitle, String countryName){
+     public RegistrationConfirmationPage SubmitRegistrationDetail(String fname, String lname, String clinicname, String email, String phone, String jobtitle, String countryName){
 
         txtfirstname.sendKeys(fname);
         txtlastname.sendKeys(lname);
@@ -66,7 +64,7 @@ public class RegistrationPage extends TestBase {
         btnsubmit.click();
 
         //Navigate to the HomePage
-        return new HomePage();
+        return new RegistrationConfirmationPage();
 
      }
 
