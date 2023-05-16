@@ -1,11 +1,7 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-
-#Other
-allure-results
-logs
-screenshots
-target
-.idea
-
+/target
+.idea/
+.settings/
+*.iml
+.classpath
+.project
+/allure-results

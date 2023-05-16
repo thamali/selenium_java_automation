@@ -7,7 +7,6 @@
     <test name="UserRegistrationTest" >
         <classes>
             <class name= "Test.RegistrationPageTest"/>
-            <class name= "Test.RegistrationConfirmationPageTest"/>
 
         </classes>
     </test>

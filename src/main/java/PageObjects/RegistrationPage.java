@@ -12,25 +12,25 @@ public class RegistrationPage extends TestBase {
     //Page Factory Object Reporsitory
 
     @FindBy(xpath="//input[@name='firstname']")
-    WebElement txtfirstname;
+   private WebElement txtfirstname;
     @FindBy(xpath = "//input[@name='lastname']")
-    WebElement txtlastname;
+   private WebElement txtlastname;
     @FindBy(xpath="//input[@name='company']")
-    WebElement txtclinicname;
+    private WebElement txtclinicname;
     @FindBy(xpath ="//input[@name='email']")
-    WebElement txtemail;
+    private WebElement txtemail;
     @FindBy(xpath = "//input[@name='phone']")
-    WebElement txtphone;
+    private WebElement txtphone;
     @FindBy(xpath ="//input[@name='jobtitle']")
-    WebElement txtjobtitle;
+    private WebElement txtjobtitle;
     @FindBy(xpath = "//input[@type='checkbox' and @class='hs-input' and @name='LEGAL_CONSENT.subscription_type_6801572']")
-    WebElement checkboxaccept;
+    private WebElement checkboxaccept;
     @FindBy(xpath = "//input[@type='submit' and @value='Submit']" )
-    WebElement btnsubmit;
+    private WebElement btnsubmit;
     @FindBy(xpath = "//a[contains(text( ),'Acceptera')]")
-    WebElement Alertcoockie;
+    private WebElement Alertcoockie;
     @FindBy(xpath = "//*[@name='country__dropdown_']")
-    WebElement country;
+    private WebElement country;
 
     //Initializing the page objects
     public RegistrationPage(){
